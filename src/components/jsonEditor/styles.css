@@ -1,0 +1,280 @@
+:host {
+  display: block;
+  font-family: var(--font-body, system-ui, sans-serif);
+  color: var(--ededitor-ink, #1f2933);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.je-root {
+  width: 100%;
+}
+
+.je-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.je-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink-dim, #64748b);
+  text-transform: uppercase;
+}
+
+.je-btn {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 5px 11px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.je-btn:hover {
+  background: #e2e8f0;
+}
+
+.je-btn.primary {
+  background: var(--brass, #c9a24b);
+  border-color: var(--brass, #c9a24b);
+  color: #1a1207;
+}
+
+.je-btn.danger {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  flex-shrink: 0;
+}
+
+.je-array {
+  border: 1px solid var(--line);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: var(--bg-panel);
+  width: 100%;
+  min-width: 0;
+}
+
+.je-array-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+
+.je-label {
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: #64748b;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.je-list {
+  width: 100%;
+  min-width: 0;
+  min-height: 10px;
+}
+
+.je-empty {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  font-style: italic;
+}
+
+.je-prim-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 100%;
+  min-width: 0;
+}
+
+.je-handle {
+  cursor: grab;
+  font-weight: bold;
+  color: #94a3b8;
+  padding: 2px 4px;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.je-card {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+}
+
+.je-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--line);
+  user-select: none;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.je-card-toggle {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: bold;
+  width: 12px;
+  flex-shrink: 0;
+}
+
+.je-card-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.je-key-input {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+}
+
+.je-card-body {
+  background: var(--bg);
+  padding: 10px;
+  width: 100%;
+  min-width: 0;
+}
+
+.je-obj {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 2px solid var(--line);
+  padding-left: 10px;
+  margin: 4px 0;
+  width: 100%;
+  min-width: 0;
+}
+
+.je-field {
+  width: 100%;
+  min-width: 0;
+}
+
+.je-add {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.je-add-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.je-add-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.je-bool-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.je-bool-row input[type="checkbox"] {
+  width: auto;
+  flex: none;
+  accent-color: var(--brass, #c9a24b);
+}
+
+.je-bool-row span {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-family: inherit;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+textarea {
+  resize: none;
+  overflow-y: hidden;
+  line-height: 1.5;
+}
+
+.je-preview {
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  max-height: 50vh;
+  line-height: 1.4;
+  margin: 10px 0 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+
+.collapse {
+  .je-card-head {
+    border-bottom: none !important;
+  }
+
+  .je-card-body {
+    display: none !important;
+  }
+}

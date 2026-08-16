@@ -1,0 +1,34 @@
+<div class="overlay" id="overlay">
+  <div class="modal-content">
+    <button class="close-btn" id="btn-close" title="閉じる">&times;</button>
+
+    <h3>ワークスペース</h3>
+
+    <div class="card">
+      <p>作業パス: <span id="current-path" class="active-path">未選択</span></p>
+
+      <label><strong>既存プロジェクトの選択 / 削除</strong></label>
+      <div class="row">
+        <select id="project-select"></select>
+        <button id="btn-open">開く</button>
+        <button id="btn-delete" class="danger">削除</button>
+      </div>
+
+      <hr />
+
+      <label><strong>新規プロジェクト作成</strong></label>
+      <div class="row">
+        <input type="text" id="new-dir-input" placeholder="例: project-a" />
+        <button id="btn-create">作成</button>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <button id="btn-download" class="secondary" style="width: 100%;">
+          📦 ZIP一括ダウンロード
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
