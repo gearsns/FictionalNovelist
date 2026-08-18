@@ -154,7 +154,7 @@ getEl("#idea-file").addEventListener("change", async (e) => {
 
 // 9. Busy State Wrapper
 const actionButtons = getAllEl<HTMLButtonElement>(
-    "#run-init-btn, #rerun-init-btn, #run-outline-btn, #run-write-btn, #run-rewrite-btn, #run-reconstruct-btn, #test-connection-btn, #pick-folder-btn, #save-settings-btn, #edit-save-btn, #edit-reload-btn"
+    "#run-init-btn, #rerun-init-btn, #run-outline-btn, #run-write-btn, #run-rewrite-btn, #run-reconstruct-btn, #test-connection-btn, #pick-folder-btn, #open-workspace-btn, #save-settings-btn, #edit-save-btn, #edit-reload-btn"
 );
 
 async function withBusy(fn: () => Promise<void>) {
